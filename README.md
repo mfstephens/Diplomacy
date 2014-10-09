@@ -1,0 +1,4 @@
+Diplomacy
+=========
+
+Diplomacy for iOS
