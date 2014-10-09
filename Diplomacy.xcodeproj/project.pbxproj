@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9A6E56919E74B3800610FEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56819E74B3800610FEF /* AudioToolbox.framework */; };
+		C9A6E56B19E74B4100610FEF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56A19E74B4100610FEF /* CFNetwork.framework */; };
+		C9A6E56D19E74B4E00610FEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56C19E74B4E00610FEF /* CoreGraphics.framework */; };
+		C9A6E56F19E74B5900610FEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56E19E74B5900610FEF /* CoreLocation.framework */; };
+		C9A6E57119E74B6500610FEF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57019E74B6500610FEF /* libz.dylib */; };
+		C9A6E57319E74B6C00610FEF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57219E74B6C00610FEF /* MobileCoreServices.framework */; };
+		C9A6E57519E74B7300610FEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57419E74B7300610FEF /* QuartzCore.framework */; };
+		C9A6E57719E74B7A00610FEF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57619E74B7A00610FEF /* Security.framework */; };
+		C9A6E57919E74BC000610FEF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57819E74BC000610FEF /* StoreKit.framework */; };
+		C9A6E57B19E74BC600610FEF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E57A19E74BC600610FEF /* SystemConfiguration.framework */; };
 		C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBA19E74437006385A8 /* AppDelegate.swift */; };
 		C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBC19E74437006385A8 /* Diplomacy.xcdatamodeld */; };
 		C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBF19E74437006385A8 /* ViewController.swift */; };
@@ -14,6 +24,8 @@
 		C9ACCDC519E74437006385A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC419E74437006385A8 /* Images.xcassets */; };
 		C9ACCDC819E74437006385A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC619E74437006385A8 /* LaunchScreen.xib */; };
 		C9ACCDD419E74437006385A8 /* DiplomacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */; };
+		C9ACCDDE19E74794006385A8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDDD19E74794006385A8 /* Podfile */; };
+		F6C0B8006D7741BBB6020FB9 /* libPods-Diplomacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 751EC033774F4D58AE65129C /* libPods-Diplomacy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +39,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		751EC033774F4D58AE65129C /* libPods-Diplomacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diplomacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
+		C9A6E56819E74B3800610FEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C9A6E56A19E74B4100610FEF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C9A6E56C19E74B4E00610FEF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9A6E56E19E74B5900610FEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C9A6E57019E74B6500610FEF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C9A6E57219E74B6C00610FEF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C9A6E57419E74B7300610FEF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C9A6E57619E74B7A00610FEF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C9A6E57819E74BC000610FEF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C9A6E57A19E74BC600610FEF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C9A6E57C19E74BEF00610FEF /* Diplomacy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Diplomacy-Bridging-Header.h"; sourceTree = "<group>"; };
 		C9ACCDB519E74437006385A8 /* Diplomacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diplomacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ACCDB919E74437006385A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9ACCDBA19E74437006385A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +63,7 @@
 		C9ACCDCD19E74437006385A8 /* DiplomacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ACCDD219E74437006385A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomacyTests.swift; sourceTree = "<group>"; };
+		C9ACCDDD19E74794006385A8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +71,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9A6E57B19E74BC600610FEF /* SystemConfiguration.framework in Frameworks */,
+				C9A6E57919E74BC000610FEF /* StoreKit.framework in Frameworks */,
+				C9A6E57719E74B7A00610FEF /* Security.framework in Frameworks */,
+				C9A6E57519E74B7300610FEF /* QuartzCore.framework in Frameworks */,
+				C9A6E57319E74B6C00610FEF /* MobileCoreServices.framework in Frameworks */,
+				C9A6E57119E74B6500610FEF /* libz.dylib in Frameworks */,
+				C9A6E56F19E74B5900610FEF /* CoreLocation.framework in Frameworks */,
+				C9A6E56D19E74B4E00610FEF /* CoreGraphics.framework in Frameworks */,
+				C9A6E56B19E74B4100610FEF /* CFNetwork.framework in Frameworks */,
+				C9A6E56919E74B3800610FEF /* AudioToolbox.framework in Frameworks */,
+				F6C0B8006D7741BBB6020FB9 /* libPods-Diplomacy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +101,10 @@
 				C9ACCDB719E74437006385A8 /* Diplomacy */,
 				C9ACCDD019E74437006385A8 /* DiplomacyTests */,
 				C9ACCDB619E74437006385A8 /* Products */,
+				C9ACCDDD19E74794006385A8 /* Podfile */,
+				8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */,
+				D8413B37A91F4D50A49D2AC0 /* Frameworks */,
+				C9A6E57C19E74BEF00610FEF /* Diplomacy-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +156,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D8413B37A91F4D50A49D2AC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9A6E57A19E74BC600610FEF /* SystemConfiguration.framework */,
+				C9A6E57819E74BC000610FEF /* StoreKit.framework */,
+				C9A6E57619E74B7A00610FEF /* Security.framework */,
+				C9A6E57419E74B7300610FEF /* QuartzCore.framework */,
+				C9A6E57219E74B6C00610FEF /* MobileCoreServices.framework */,
+				C9A6E57019E74B6500610FEF /* libz.dylib */,
+				C9A6E56E19E74B5900610FEF /* CoreLocation.framework */,
+				C9A6E56C19E74B4E00610FEF /* CoreGraphics.framework */,
+				C9A6E56A19E74B4100610FEF /* CFNetwork.framework */,
+				C9A6E56819E74B3800610FEF /* AudioToolbox.framework */,
+				751EC033774F4D58AE65129C /* libPods-Diplomacy.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9ACCDD719E74437006385A8 /* Build configuration list for PBXNativeTarget "Diplomacy" */;
 			buildPhases = (
+				2BD1D38BF01C4EAD873F948C /* Check Pods Manifest.lock */,
 				C9ACCDB119E74437006385A8 /* Sources */,
 				C9ACCDB219E74437006385A8 /* Frameworks */,
 				C9ACCDB319E74437006385A8 /* Resources */,
+				401CE507379A4DA8AB0DC8F6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,6 +258,7 @@
 			files = (
 				C9ACCDC319E74437006385A8 /* Main.storyboard in Resources */,
 				C9ACCDC819E74437006385A8 /* LaunchScreen.xib in Resources */,
+				C9ACCDDE19E74794006385A8 /* Podfile in Resources */,
 				C9ACCDC519E74437006385A8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +271,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BD1D38BF01C4EAD873F948C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		401CE507379A4DA8AB0DC8F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Diplomacy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9ACCDB119E74437006385A8 /* Sources */ = {
@@ -338,21 +433,28 @@
 		};
 		C9ACCDD819E74437006385A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diplomacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Diplomacy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C9ACCDD919E74437006385A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Diplomacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Diplomacy-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +511,7 @@
 				C9ACCDD919E74437006385A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C9ACCDDA19E74437006385A8 /* Build configuration list for PBXNativeTarget "DiplomacyTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +520,7 @@
 				C9ACCDDC19E74437006385A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
