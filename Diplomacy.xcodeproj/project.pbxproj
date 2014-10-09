@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBA19E74437006385A8 /* AppDelegate.swift */; };
+		C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBC19E74437006385A8 /* Diplomacy.xcdatamodeld */; };
+		C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDBF19E74437006385A8 /* ViewController.swift */; };
+		C9ACCDC319E74437006385A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC119E74437006385A8 /* Main.storyboard */; };
+		C9ACCDC519E74437006385A8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC419E74437006385A8 /* Images.xcassets */; };
+		C9ACCDC819E74437006385A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC619E74437006385A8 /* LaunchScreen.xib */; };
+		C9ACCDD419E74437006385A8 /* DiplomacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C9ACCDCE19E74437006385A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C9ACCDAD19E74437006385A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9ACCDB419E74437006385A8;
+			remoteInfo = Diplomacy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C9ACCDB519E74437006385A8 /* Diplomacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diplomacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ACCDB919E74437006385A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9ACCDBA19E74437006385A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C9ACCDBD19E74437006385A8 /* Diplomacy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Diplomacy.xcdatamodel; sourceTree = "<group>"; };
+		C9ACCDBF19E74437006385A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C9ACCDC219E74437006385A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C9ACCDC419E74437006385A8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C9ACCDC719E74437006385A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C9ACCDCD19E74437006385A8 /* DiplomacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9ACCDD219E74437006385A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomacyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9ACCDB219E74437006385A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ACCDCA19E74437006385A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9ACCDAC19E74437006385A8 = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDB719E74437006385A8 /* Diplomacy */,
+				C9ACCDD019E74437006385A8 /* DiplomacyTests */,
+				C9ACCDB619E74437006385A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9ACCDB619E74437006385A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDB519E74437006385A8 /* Diplomacy.app */,
+				C9ACCDCD19E74437006385A8 /* DiplomacyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9ACCDB719E74437006385A8 /* Diplomacy */ = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDBA19E74437006385A8 /* AppDelegate.swift */,
+				C9ACCDBF19E74437006385A8 /* ViewController.swift */,
+				C9ACCDC119E74437006385A8 /* Main.storyboard */,
+				C9ACCDC419E74437006385A8 /* Images.xcassets */,
+				C9ACCDC619E74437006385A8 /* LaunchScreen.xib */,
+				C9ACCDBC19E74437006385A8 /* Diplomacy.xcdatamodeld */,
+				C9ACCDB819E74437006385A8 /* Supporting Files */,
+			);
+			path = Diplomacy;
+			sourceTree = "<group>";
+		};
+		C9ACCDB819E74437006385A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDB919E74437006385A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9ACCDD019E74437006385A8 /* DiplomacyTests */ = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */,
+				C9ACCDD119E74437006385A8 /* Supporting Files */,
+			);
+			path = DiplomacyTests;
+			sourceTree = "<group>";
+		};
+		C9ACCDD119E74437006385A8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9ACCDD219E74437006385A8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9ACCDB419E74437006385A8 /* Diplomacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9ACCDD719E74437006385A8 /* Build configuration list for PBXNativeTarget "Diplomacy" */;
+			buildPhases = (
+				C9ACCDB119E74437006385A8 /* Sources */,
+				C9ACCDB219E74437006385A8 /* Frameworks */,
+				C9ACCDB319E74437006385A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diplomacy;
+			productName = Diplomacy;
+			productReference = C9ACCDB519E74437006385A8 /* Diplomacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9ACCDCC19E74437006385A8 /* DiplomacyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9ACCDDA19E74437006385A8 /* Build configuration list for PBXNativeTarget "DiplomacyTests" */;
+			buildPhases = (
+				C9ACCDC919E74437006385A8 /* Sources */,
+				C9ACCDCA19E74437006385A8 /* Frameworks */,
+				C9ACCDCB19E74437006385A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C9ACCDCF19E74437006385A8 /* PBXTargetDependency */,
+			);
+			name = DiplomacyTests;
+			productName = DiplomacyTests;
+			productReference = C9ACCDCD19E74437006385A8 /* DiplomacyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9ACCDAD19E74437006385A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = MattStephens;
+				TargetAttributes = {
+					C9ACCDB419E74437006385A8 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					C9ACCDCC19E74437006385A8 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = C9ACCDB419E74437006385A8;
+					};
+				};
+			};
+			buildConfigurationList = C9ACCDB019E74437006385A8 /* Build configuration list for PBXProject "Diplomacy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C9ACCDAC19E74437006385A8;
+			productRefGroup = C9ACCDB619E74437006385A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9ACCDB419E74437006385A8 /* Diplomacy */,
+				C9ACCDCC19E74437006385A8 /* DiplomacyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9ACCDB319E74437006385A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ACCDC319E74437006385A8 /* Main.storyboard in Resources */,
+				C9ACCDC819E74437006385A8 /* LaunchScreen.xib in Resources */,
+				C9ACCDC519E74437006385A8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ACCDCB19E74437006385A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9ACCDB119E74437006385A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */,
+				C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */,
+				C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ACCDC919E74437006385A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9ACCDD419E74437006385A8 /* DiplomacyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C9ACCDCF19E74437006385A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9ACCDB419E74437006385A8 /* Diplomacy */;
+			targetProxy = C9ACCDCE19E74437006385A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C9ACCDC119E74437006385A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ACCDC219E74437006385A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C9ACCDC619E74437006385A8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9ACCDC719E74437006385A8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9ACCDD519E74437006385A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C9ACCDD619E74437006385A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9ACCDD819E74437006385A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Diplomacy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C9ACCDD919E74437006385A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Diplomacy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C9ACCDDB19E74437006385A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiplomacyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplomacy.app/Diplomacy";
+			};
+			name = Debug;
+		};
+		C9ACCDDC19E74437006385A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DiplomacyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diplomacy.app/Diplomacy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9ACCDB019E74437006385A8 /* Build configuration list for PBXProject "Diplomacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9ACCDD519E74437006385A8 /* Debug */,
+				C9ACCDD619E74437006385A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9ACCDD719E74437006385A8 /* Build configuration list for PBXNativeTarget "Diplomacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9ACCDD819E74437006385A8 /* Debug */,
+				C9ACCDD919E74437006385A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C9ACCDDA19E74437006385A8 /* Build configuration list for PBXNativeTarget "DiplomacyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9ACCDDB19E74437006385A8 /* Debug */,
+				C9ACCDDC19E74437006385A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9ACCDBC19E74437006385A8 /* Diplomacy.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9ACCDBD19E74437006385A8 /* Diplomacy.xcdatamodel */,
+			);
+			currentVersion = C9ACCDBD19E74437006385A8 /* Diplomacy.xcdatamodel */;
+			path = Diplomacy.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C9ACCDAD19E74437006385A8 /* Project object */;
+}
