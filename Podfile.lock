@@ -1,13 +1,21 @@
 PODS:
-  - Bolts (1.1.2)
+  - Bolts (1.1.3)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core
+  - MagicalRecord/Core (2.2)
+  - NPReachability (0.2.0)
   - Parse (1.4.1):
     - Bolts (~> 1.1.2)
 
 DEPENDENCIES:
+  - MagicalRecord
+  - NPReachability
   - Parse
 
 SPEC CHECKSUMS:
-  Bolts: 2635e8698a630774689441047f3465d78c48d485
+  Bolts: 3db0a875235e0c9042b013af13af0f00f79b102c
+  MagicalRecord: 2b471584fc9e3137f3d0a56967917baa4979e224
+  NPReachability: 8cc49b29538ef6815a3b7bcc5ab3c8ffbadc0b8a
   Parse: db1a09c832b7509edcc88a65dc07229f5e578c73
 
 COCOAPODS: 0.33.1

@@ -10,7 +10,25 @@
 #define COCOAPODS_POD_AVAILABLE_Bolts
 #define COCOAPODS_VERSION_MAJOR_Bolts 1
 #define COCOAPODS_VERSION_MINOR_Bolts 1
-#define COCOAPODS_VERSION_PATCH_Bolts 2
+#define COCOAPODS_VERSION_PATCH_Bolts 3
+
+// MagicalRecord
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord 2
+#define COCOAPODS_VERSION_PATCH_MagicalRecord 0
+
+// MagicalRecord/Core
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord_Core
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord_Core 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord_Core 2
+#define COCOAPODS_VERSION_PATCH_MagicalRecord_Core 0
+
+// NPReachability
+#define COCOAPODS_POD_AVAILABLE_NPReachability
+#define COCOAPODS_VERSION_MAJOR_NPReachability 0
+#define COCOAPODS_VERSION_MINOR_NPReachability 2
+#define COCOAPODS_VERSION_PATCH_NPReachability 0
 
 // Parse
 #define COCOAPODS_POD_AVAILABLE_Parse

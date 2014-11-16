@@ -5,11 +5,11 @@
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" syncable="YES"/>
-        <relationship name="provinces" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Province" syncable="YES"/>
-        <relationship name="units" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Unit" syncable="YES"/>
+        <relationship name="game" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Game" inverseName="board" inverseEntity="Game" syncable="YES"/>
+        <relationship name="provinces" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Province" inverseName="board" inverseEntity="Province" syncable="YES"/>
+        <relationship name="units" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Unit" inverseName="board" inverseEntity="Unit" syncable="YES"/>
     </entity>
-    <entity name="Game" syncable="YES">
+    <entity name="Game" representedClassName="Diplomacy.Game" syncable="YES">
         <attribute name="acl" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="numberOfPlayers" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
@@ -21,7 +21,7 @@
         <attribute name="turnNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="winner" optional="YES" attributeType="Transformable" syncable="YES"/>
-        <relationship name="board" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Board" syncable="YES"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Board" inverseName="game" inverseEntity="Board" syncable="YES"/>
     </entity>
     <entity name="Move" syncable="YES">
         <attribute name="acl" optional="YES" attributeType="Transformable" syncable="YES"/>
@@ -37,8 +37,8 @@
         <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" syncable="YES"/>
-        <relationship name="occupant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Unit" syncable="YES"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" inverseName="provinces" inverseEntity="Board" syncable="YES"/>
+        <relationship name="occupant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Unit" inverseName="location" inverseEntity="Unit" syncable="YES"/>
     </entity>
     <entity name="Unit" syncable="YES">
         <attribute name="acl" optional="YES" attributeType="Transformable" syncable="YES"/>
@@ -46,14 +46,14 @@
         <attribute name="objectId" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
-        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" syncable="YES"/>
-        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Province" syncable="YES"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" inverseName="units" inverseEntity="Board" syncable="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Province" inverseName="occupant" inverseEntity="Province" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Board" positionX="-2718" positionY="-702" width="128" height="150"/>
         <element name="Game" positionX="-2423" positionY="-684" width="128" height="223"/>
-        <element name="Board" positionX="-2718" positionY="-702" width="128" height="148"/>
         <element name="Move" positionX="-2718" positionY="-508" width="128" height="103"/>
-        <element name="Province" positionX="-2720" positionY="-918" width="128" height="178"/>
-        <element name="Unit" positionX="-2457" positionY="-922" width="128" height="148"/>
+        <element name="Province" positionX="-2720" positionY="-918" width="128" height="180"/>
+        <element name="Unit" positionX="-2457" positionY="-922" width="128" height="150"/>
     </elements>
 </model>

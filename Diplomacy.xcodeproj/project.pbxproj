@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E31A1274AD00732AB5 /* SignupViewController.swift */; };
+		C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E51A1416A800732AB5 /* GamesListViewController.swift */; };
 		C9A6E56919E74B3800610FEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56819E74B3800610FEF /* AudioToolbox.framework */; };
 		C9A6E56B19E74B4100610FEF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56A19E74B4100610FEF /* CFNetwork.framework */; };
 		C9A6E56D19E74B4E00610FEF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56C19E74B4E00610FEF /* CoreGraphics.framework */; };
@@ -25,6 +27,8 @@
 		C9ACCDC819E74437006385A8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDC619E74437006385A8 /* LaunchScreen.xib */; };
 		C9ACCDD419E74437006385A8 /* DiplomacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */; };
 		C9ACCDDE19E74794006385A8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDDD19E74794006385A8 /* Podfile */; };
+		C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */; };
+		C9DBEF7C19EEDC4D00BA6BE5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */; };
 		F6C0B8006D7741BBB6020FB9 /* libPods-Diplomacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 751EC033774F4D58AE65129C /* libPods-Diplomacy.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,8 @@
 /* Begin PBXFileReference section */
 		751EC033774F4D58AE65129C /* libPods-Diplomacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diplomacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
+		C98142E31A1274AD00732AB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		C98142E51A1416A800732AB5 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		C9A6DA3D19EE2CF10047BA28 /* Diplomacy 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diplomacy 2.xcdatamodel"; sourceTree = "<group>"; };
 		C9A6E56819E74B3800610FEF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C9A6E56A19E74B4100610FEF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -64,7 +70,9 @@
 		C9ACCDCD19E74437006385A8 /* DiplomacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiplomacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ACCDD219E74437006385A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomacyTests.swift; sourceTree = "<group>"; };
-		C9ACCDDD19E74794006385A8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		C9ACCDDD19E74794006385A8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,8 @@
 		C9ACCDB719E74437006385A8 /* Diplomacy */ = {
 			isa = PBXGroup;
 			children = (
+				C9DBEF7819EE4DEB00BA6BE5 /* Model */,
+				C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */,
 				C9ACCDBA19E74437006385A8 /* AppDelegate.swift */,
 				C9ACCDBF19E74437006385A8 /* ViewController.swift */,
 				C9ACCDC119E74437006385A8 /* Main.storyboard */,
@@ -155,6 +165,24 @@
 				C9ACCDD219E74437006385A8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */,
+				C98142E31A1274AD00732AB5 /* SignupViewController.swift */,
+				C98142E51A1416A800732AB5 /* GamesListViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C9DBEF7819EE4DEB00BA6BE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		D8413B37A91F4D50A49D2AC0 /* Frameworks */ = {
@@ -311,6 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */,
+				C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */,
+				C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */,
+				C9DBEF7C19EEDC4D00BA6BE5 /* Game.swift in Sources */,
 				C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */,
 				C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */,
 				C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */,

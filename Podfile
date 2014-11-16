@@ -4,6 +4,8 @@
 target "Diplomacy" do
 
 pod 'Parse'
+pod 'NPReachability'
+pod 'MagicalRecord'
 
 end
 
