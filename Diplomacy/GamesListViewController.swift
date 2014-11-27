@@ -23,7 +23,13 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
+        var cell:GamesListTableCell? = tableView.dequeueReusableCellWithIdentifier("GamesListTableCell") as? GamesListTableCell
+        var numberOfPlayers = 5
+        var turnNumber = 4
+        cell?.nameLabel.text = "game name"
+        cell?.numberOfPlayersLabel.text = "Number of players: " + String(numberOfPlayers)
+        cell?.turnNumberLabel.text = "Turn number: " + String(turnNumber)
+        return cell!
     }
     
 }

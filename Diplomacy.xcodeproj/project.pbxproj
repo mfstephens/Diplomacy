@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */; };
 		C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E31A1274AD00732AB5 /* SignupViewController.swift */; };
 		C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E51A1416A800732AB5 /* GamesListViewController.swift */; };
 		C9A6E56919E74B3800610FEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56819E74B3800610FEF /* AudioToolbox.framework */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		751EC033774F4D58AE65129C /* libPods-Diplomacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diplomacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
+		C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableCell.swift; sourceTree = "<group>"; };
 		C98142E31A1274AD00732AB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C98142E51A1416A800732AB5 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		C9A6DA3D19EE2CF10047BA28 /* Diplomacy 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diplomacy 2.xcdatamodel"; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C947D8741A26CAF6001F8130 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */,
+			);
+			name = TableCells;
+			sourceTree = "<group>";
+		};
 		C9ACCDAC19E74437006385A8 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +180,7 @@
 		C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C947D8741A26CAF6001F8130 /* TableCells */,
 				C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */,
 				C98142E31A1274AD00732AB5 /* SignupViewController.swift */,
 				C98142E51A1416A800732AB5 /* GamesListViewController.swift */,
@@ -339,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */,
 				C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */,
 				C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */,
 				C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */,

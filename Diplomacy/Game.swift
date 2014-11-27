@@ -23,6 +23,7 @@ class Game: NSManagedObject {
     @NSManaged var updatedAt: NSDate
     @NSManaged var winner: AnyObject
     @NSManaged var board: NSManagedObject
+    @NSManaged var title: NSString
     
 //    init (
 
