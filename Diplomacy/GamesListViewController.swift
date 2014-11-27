@@ -10,6 +10,9 @@ import Foundation
 
 class GamesListViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
  
+    var gamesList = [PFObject]()
+    @IBOutlet weak var tableView: UITableView!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -18,18 +21,42 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        getAllGames()
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return gamesList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell:GamesListTableCell? = tableView.dequeueReusableCellWithIdentifier("GamesListTableCell") as? GamesListTableCell
-        var numberOfPlayers = 5
-        var turnNumber = 4
-        cell?.nameLabel.text = "game name"
-        cell?.numberOfPlayersLabel.text = "Number of players: " + String(numberOfPlayers)
-        cell?.turnNumberLabel.text = "Turn number: " + String(turnNumber)
+        var cell:GamesListTableCell? = self.tableView.dequeueReusableCellWithIdentifier("GamesListTableCell") as? GamesListTableCell
+        println(gamesList[indexPath.row])
+        var gameName = gamesList[indexPath.row]["name"] as String
+        var numberOfPlayers = gamesList[indexPath.row]["numberOfPlayers"] as NSNumber
+        var turnNumber = gamesList[indexPath.row]["turnNumber"] as NSNumber
+        cell?.loadCell(gameName, numberOfPlayers: numberOfPlayers.stringValue, turnNumber: turnNumber.stringValue)
         return cell!
+    }
+    
+    func getAllGames() {
+        var query = PFQuery(className:"Game")
+        var results = [PFObject]()
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [AnyObject]!, error: NSError!) -> Void in
+            if error == nil {
+                // The find succeeded.
+                // Do something with the found objects
+                for object in objects {
+                    self.gamesList.append(object as PFObject)
+                }
+                self.tableView.reloadData()
+            } else {
+                // Log details of the failure
+                NSLog("Error: %@ %@", error, error.userInfo!)
+            }
+        }
     }
     
 }

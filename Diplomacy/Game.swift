@@ -25,6 +25,8 @@ class Game: NSManagedObject {
     @NSManaged var board: NSManagedObject
     @NSManaged var title: NSString
     
-//    init (
+    func initFromObject(object : PFObject) {
+            // do some stuff
+    }
 
 }

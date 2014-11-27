@@ -13,4 +13,10 @@ class GamesListTableCell : UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberOfPlayersLabel: UILabel!
     @IBOutlet weak var turnNumberLabel: UILabel!
+
+    func loadCell(name : String, numberOfPlayers : String, turnNumber : String) {
+        nameLabel.text = name
+        numberOfPlayersLabel.text = numberOfPlayers
+        turnNumberLabel.text = turnNumber
+    }
 }

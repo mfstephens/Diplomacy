@@ -232,7 +232,7 @@
                     <navigationItem key="navigationItem" id="aRk-p1-6B4">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="FUv-BZ-bjp">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <rect key="frame" x="212" y="7" width="176" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="All Games"/>
@@ -240,11 +240,17 @@
                             </segments>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="Vj8-jZ-pJX">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="3b3-gz-L3v" id="K4p-Os-mCP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGh-Pg-FWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2777" y="788"/>
+            <point key="canvasLocation" x="2744" y="787.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dTw-KD-SX7">
