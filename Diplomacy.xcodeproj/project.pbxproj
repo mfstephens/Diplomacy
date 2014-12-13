@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C94754921A27B8DD0007D6E1 /* NewGameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */; };
 		C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */; };
+		C97C7D3D1A3CC59C003C9B21 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C7D3C1A3CC59C003C9B21 /* Board.swift */; };
+		C97C7D3F1A3CC5CC003C9B21 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C7D3E1A3CC5CC003C9B21 /* Game.swift */; };
 		C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E31A1274AD00732AB5 /* SignupViewController.swift */; };
 		C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E51A1416A800732AB5 /* GamesListViewController.swift */; };
 		C9A6E56919E74B3800610FEF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9A6E56819E74B3800610FEF /* AudioToolbox.framework */; };
@@ -29,7 +32,7 @@
 		C9ACCDD419E74437006385A8 /* DiplomacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */; };
 		C9ACCDDE19E74794006385A8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = C9ACCDDD19E74794006385A8 /* Podfile */; };
 		C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */; };
-		C9DBEF7C19EEDC4D00BA6BE5 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */; };
+		C9DE269C1A3A144C00A21B03 /* GameScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DE269B1A3A144C00A21B03 /* GameScreenViewController.swift */; };
 		F6C0B8006D7741BBB6020FB9 /* libPods-Diplomacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 751EC033774F4D58AE65129C /* libPods-Diplomacy.a */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +49,10 @@
 /* Begin PBXFileReference section */
 		751EC033774F4D58AE65129C /* libPods-Diplomacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diplomacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
+		C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameTableViewController.swift; sourceTree = "<group>"; };
 		C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableCell.swift; sourceTree = "<group>"; };
+		C97C7D3C1A3CC59C003C9B21 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		C97C7D3E1A3CC5CC003C9B21 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C98142E31A1274AD00732AB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		C98142E51A1416A800732AB5 /* GamesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListViewController.swift; sourceTree = "<group>"; };
 		C9A6DA3D19EE2CF10047BA28 /* Diplomacy 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Diplomacy 2.xcdatamodel"; sourceTree = "<group>"; };
@@ -74,7 +80,7 @@
 		C9ACCDD319E74437006385A8 /* DiplomacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomacyTests.swift; sourceTree = "<group>"; };
 		C9ACCDDD19E74794006385A8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		C9DE269B1A3A144C00A21B03 /* GameScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +186,8 @@
 		C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C9DE269B1A3A144C00A21B03 /* GameScreenViewController.swift */,
+				C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */,
 				C947D8741A26CAF6001F8130 /* TableCells */,
 				C9DBEF7619EE3D0000BA6BE5 /* LoginViewController.swift */,
 				C98142E31A1274AD00732AB5 /* SignupViewController.swift */,
@@ -191,7 +199,8 @@
 		C9DBEF7819EE4DEB00BA6BE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C9DBEF7B19EEDC4D00BA6BE5 /* Game.swift */,
+				C97C7D3E1A3CC5CC003C9B21 /* Game.swift */,
+				C97C7D3C1A3CC59C003C9B21 /* Board.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -350,11 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DE269C1A3A144C00A21B03 /* GameScreenViewController.swift in Sources */,
+				C97C7D3F1A3CC5CC003C9B21 /* Game.swift in Sources */,
 				C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */,
 				C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */,
+				C94754921A27B8DD0007D6E1 /* NewGameTableViewController.swift in Sources */,
+				C97C7D3D1A3CC59C003C9B21 /* Board.swift in Sources */,
 				C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */,
 				C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */,
-				C9DBEF7C19EEDC4D00BA6BE5 /* Game.swift in Sources */,
 				C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */,
 				C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */,
 				C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */,

@@ -20,10 +20,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        usernameField.resignFirstResponder()
+        return true
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
-        usernameField.becomeFirstResponder()
+//        usernameField.becomeFirstResponder()
     }
 
     
@@ -48,10 +53,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             textError = true
             
             if (passwordLength == 0) {
-                passwordField.becomeFirstResponder()
+//                passwordField.becomeFirstResponder()
             }
             if (usernameLength == 0) {
-                usernameField.becomeFirstResponder()
+//                usernameField.becomeFirstResponder()
             }
         }
         
@@ -66,7 +71,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
             if (user != nil) {
                 // got a user
-                println("found user")
                 self.performSegueWithIdentifier("didLoginSegue", sender: nil)
             } else {
                 // no user
