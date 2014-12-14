@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92BB35F1A3D73C70090AEC9 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BB35E1A3D73C70090AEC9 /* Unit.swift */; };
+		C92BB3611A3D73D70090AEC9 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BB3601A3D73D70090AEC9 /* Province.swift */; };
 		C94754921A27B8DD0007D6E1 /* NewGameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */; };
 		C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */; };
 		C97C7D3D1A3CC59C003C9B21 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C7D3C1A3CC59C003C9B21 /* Board.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		751EC033774F4D58AE65129C /* libPods-Diplomacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Diplomacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
+		C92BB35E1A3D73C70090AEC9 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
+		C92BB3601A3D73D70090AEC9 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameTableViewController.swift; sourceTree = "<group>"; };
 		C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableCell.swift; sourceTree = "<group>"; };
 		C97C7D3C1A3CC59C003C9B21 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -199,6 +203,8 @@
 		C9DBEF7819EE4DEB00BA6BE5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C92BB3601A3D73D70090AEC9 /* Province.swift */,
+				C92BB35E1A3D73C70090AEC9 /* Unit.swift */,
 				C97C7D3E1A3CC5CC003C9B21 /* Game.swift */,
 				C97C7D3C1A3CC59C003C9B21 /* Board.swift */,
 			);
@@ -367,7 +373,9 @@
 				C97C7D3D1A3CC59C003C9B21 /* Board.swift in Sources */,
 				C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */,
 				C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */,
+				C92BB3611A3D73D70090AEC9 /* Province.swift in Sources */,
 				C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */,
+				C92BB35F1A3D73C70090AEC9 /* Unit.swift in Sources */,
 				C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */,
 				C9ACCDBB19E74437006385A8 /* AppDelegate.swift in Sources */,
 			);

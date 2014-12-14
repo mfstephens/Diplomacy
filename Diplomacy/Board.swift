@@ -21,7 +21,6 @@ class Board: NSManagedObject {
     
     func initFromObject(object : PFObject) {
         acl = object.ACL
-        println(object)
         createdAt = object.createdAt
         objectId = object.objectId
         updatedAt = object.updatedAt

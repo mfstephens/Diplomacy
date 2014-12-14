@@ -276,7 +276,7 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucx-d3-Xep">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                         <subviews>
-                                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="map-small" translatesAutoresizingMaskIntoConstraints="NO" id="6Dv-c9-lfE">
+                                            <imageView multipleTouchEnabled="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="6Dv-c9-lfE">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                             </imageView>
                                         </subviews>
@@ -465,7 +465,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="map-small" width="1153" height="966"/>
+        <image name="map" width="2400" height="2010"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZLi-5a-Kck"/>

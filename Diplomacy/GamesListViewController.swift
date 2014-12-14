@@ -14,6 +14,7 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     let managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
  
     var gamesList = [Game]()
+    var selectedGame : Game!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -57,7 +58,6 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
                     let game = Game(entity: entityDescripition!, insertIntoManagedObjectContext: self.managedObjectContext)
                     game.initFromObject(object as PFObject)
                     self.gamesList.append(game)
-
                 }
                 
                 self.tableView.reloadData()
@@ -69,12 +69,16 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedGame = gamesList[indexPath.row]
         performSegueWithIdentifier("viewGameSegue", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let gameScreen : GameScreenViewController = segue.destinationViewController as GameScreenViewController
-//        gameScreen.game = gamesList[sender!.row]
+        if (segue.description == "viewGameSegue") {
+            let gameScreen : GameScreenViewController = segue.destinationViewController as GameScreenViewController
+            gameScreen.game = selectedGame
+            println(gameScreen.game)
+        }
     }
     
 }

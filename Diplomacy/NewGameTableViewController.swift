@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreData
 
 class NewGameTableViewController : UITableViewController {
     @IBOutlet weak var gameNameField: UITextField!
@@ -20,8 +21,12 @@ class NewGameTableViewController : UITableViewController {
         
         var board = PFObject(className: "Board")
         var game = PFObject(className: "Game")
-        board["game"] = game
-        board["units"] = [PFObject(className: "Unit")]
+        var unit = PFObject(className: "Unit")
+        
+        unit["type"] = "Artillery"
+        unit["location"] = "Liverpool"
+        
+        board["units"] = [unit]
         
         game["isPrivate"] = isPrivate
         game["name"] = name
