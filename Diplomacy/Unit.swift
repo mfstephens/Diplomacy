@@ -17,9 +17,17 @@ class Unit: NSManagedObject {
     @NSManaged var type: String
     @NSManaged var updatedAt: NSDate
     @NSManaged var boardId: String
-    @NSManaged var location: NSManagedObject
+    @NSManaged var location: String
+    @NSManaged var country: String
     
     func initWithObject (object : PFObject) {
-        
+        acl = object.ACL
+        createdAt = object.createdAt
+        objectId = object.objectId
+        type = object["type"] as String
+        updatedAt = object.updatedAt
+        boardId = object["board"] as String
+        location = object["location"] as String
+        country = object["country"] as String
     }
 }

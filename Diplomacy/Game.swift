@@ -24,6 +24,7 @@ class Game: NSManagedObject {
     @NSManaged var updatedAt: NSDate
     @NSManaged var winner: AnyObject
     @NSManaged var board: Diplomacy.Board
+    @NSManaged var playersAsCountries: Int
     
     func initFromObject(object : PFObject) {
         acl = object.ACL
@@ -38,11 +39,12 @@ class Game: NSManagedObject {
         updatedAt = object.updatedAt
         winner = "placeholder" as String
         name = object["name"] as NSString
+        getGameBoard(object["board"].objectId as String)
     }
     
-    func getGameBoard(gameId : String) {
+    func getGameBoard(boardId : String) {
         var query = PFQuery(className:"Board")
-        query.whereKey("objectId", equalTo: gameId)
+        query.whereKey("objectId", equalTo: boardId)
         var gameBoard = PFObject(className:"Board")
         let entityDescripition = NSEntityDescription.entityForName("Board", inManagedObjectContext: self.managedObjectContext!)
         query.findObjectsInBackgroundWithBlock {
@@ -52,6 +54,7 @@ class Game: NSManagedObject {
                 if (objects.count != 0) {
                     tempBoard.initFromObject(objects[0] as PFObject)
                     self.board = tempBoard
+                    NSNotificationCenter.defaultCenter().postNotificationName("foundBoard", object: nil)
                 } else {
                     println("board not found")
                 }

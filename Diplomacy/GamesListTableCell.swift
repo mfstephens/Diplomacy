@@ -13,10 +13,17 @@ class GamesListTableCell : UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberOfPlayersLabel: UILabel!
     @IBOutlet weak var turnNumberLabel: UILabel!
+    @IBOutlet weak var privateLabel: UILabel!
 
-    func loadCell(name : String, numberOfPlayers : String, turnNumber : String) {
+    func loadCell(name : String, numberOfPlayers : String, turnNumber : String, isPrivate : Bool) {
         nameLabel.text = name
         numberOfPlayersLabel.text = numberOfPlayers
         turnNumberLabel.text = turnNumber
+        
+        if (isPrivate) {
+            privateLabel.text = "Yes"
+        } else {
+            privateLabel.text = "No"
+        }
     }
 }

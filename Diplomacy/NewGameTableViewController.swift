@@ -13,7 +13,7 @@ class NewGameTableViewController : UITableViewController {
     @IBOutlet weak var gameNameField: UITextField!
     @IBOutlet weak var privateGameSwitch: UISwitch!
     @IBAction func didPressCancel(sender: UIBarButtonItem) {
-        navigationController?.popToRootViewControllerAnimated(true)
+        navigationController?.dismissViewControllerAnimated(true, completion: nil)
     }
     @IBAction func didPressDone(sender: AnyObject) {
         var isPrivate = privateGameSwitch.on
@@ -21,12 +21,16 @@ class NewGameTableViewController : UITableViewController {
         
         var board = PFObject(className: "Board")
         var game = PFObject(className: "Game")
+        
         var unit = PFObject(className: "Unit")
+        var units = [PFObject]()
         
-        unit["type"] = "Artillery"
-        unit["location"] = "Liverpool"
+        unit["type"] = "Army"
+        unit["location"] = "Vienna"
+        unit["country"] = "Austria"
+        units.append(unit)
         
-        board["units"] = [unit]
+        board["units"] = units
         
         game["isPrivate"] = isPrivate
         game["name"] = name
@@ -39,6 +43,7 @@ class NewGameTableViewController : UITableViewController {
 
         game.saveInBackgroundWithBlock { (success : Bool, error : NSError!) -> Void in
             if (success) {
+                NSNotificationCenter.defaultCenter().postNotificationName("newGameCreated", object: nil)
                 self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
             }
             else {
@@ -46,6 +51,8 @@ class NewGameTableViewController : UITableViewController {
                 alert.show()
             }
         }
+        
+
     }
 
     

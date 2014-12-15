@@ -15,18 +15,14 @@ class Board: NSManagedObject {
     @NSManaged var createdAt: NSDate
     @NSManaged var objectId: String
     @NSManaged var updatedAt: NSDate
-    @NSManaged var gameId: String
-    @NSManaged var provinces: NSSet
-    @NSManaged var units: NSSet
+    @NSManaged var units: Array<Diplomacy.Unit>
     
     func initFromObject(object : PFObject) {
         acl = object.ACL
         createdAt = object.createdAt
         objectId = object.objectId
         updatedAt = object.updatedAt
-        gameId = object["game"] as String
-        provinces = NSSet()
-        units = NSSet()
+        units = object["units"] as Array
     }
 
 }

@@ -25,6 +25,7 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         getAllGames()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "getAllGames", name: "newGameCreated", object: nil)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -35,12 +36,17 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
         return gamesList.count
     }
     
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 112
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:GamesListTableCell? = self.tableView.dequeueReusableCellWithIdentifier("GamesListTableCell") as? GamesListTableCell
         var gameName = gamesList[indexPath.row].name as String
         var numberOfPlayers = gamesList[indexPath.row].numberOfPlayers as NSNumber
         var turnNumber = gamesList[indexPath.row].turnNumber as NSNumber
-        cell?.loadCell(gameName, numberOfPlayers: numberOfPlayers.stringValue, turnNumber: turnNumber.stringValue)
+        var isPrivate = gamesList[indexPath.row].isPrivate as Bool
+        cell?.loadCell(gameName, numberOfPlayers: numberOfPlayers.stringValue, turnNumber: turnNumber.stringValue, isPrivate: isPrivate)
         return cell!
     }
     
@@ -57,7 +63,17 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
                 for object in objects {
                     let game = Game(entity: entityDescripition!, insertIntoManagedObjectContext: self.managedObjectContext)
                     game.initFromObject(object as PFObject)
-                    self.gamesList.append(game)
+                    
+                    var shouldInsert = true
+                    for g in self.gamesList {
+                        if (g.objectId == object.objectId as String) {
+                            shouldInsert = false
+                        }
+                    }
+                    
+                    if (shouldInsert) {
+                        self.gamesList.append(game)
+                    }
                 }
                 
                 self.tableView.reloadData()
@@ -70,14 +86,14 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedGame = gamesList[indexPath.row]
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         performSegueWithIdentifier("viewGameSegue", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.description == "viewGameSegue") {
+        if (segue.identifier == "viewGameSegue") {
             let gameScreen : GameScreenViewController = segue.destinationViewController as GameScreenViewController
             gameScreen.game = selectedGame
-            println(gameScreen.game)
         }
     }
     

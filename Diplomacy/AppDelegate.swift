@@ -29,7 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let game = NSEntityDescription.insertNewObjectForEntityForName("Game", inManagedObjectContext: self.managedObjectContext!) as Game
         
         game.createdAt = NSDate()
-
+        
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         
         return true
     }
