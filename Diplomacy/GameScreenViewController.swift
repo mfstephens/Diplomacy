@@ -17,6 +17,8 @@ class GameScreenViewController : UIViewController, UIScrollViewDelegate {
     
     var game : Game!
     var provinces = Dictionary<String, CGPoint>()
+    var selectedPiece : UIImageView!
+    var isMovingPiece = false
     
     override func viewDidLoad() {
         provinces["Adriatic Sea"] = CGPoint(x: 1500, y: 800)
@@ -108,45 +110,48 @@ class GameScreenViewController : UIViewController, UIScrollViewDelegate {
         placePiece("russia-army", province: "Apulia")
         placePiece("italy-army", province: "Armenia")
         placePiece("france-army", province: "Baltic Sea")
+        
+        var tapGesture = UITapGestureRecognizer(target: self, action: "processMapTap:")
+        tapGesture.cancelsTouchesInView = false
+        scrollView.addGestureRecognizer(tapGesture)
     }
     
+    func processMapTap(sender : UITapGestureRecognizer) {
+        if (isMovingPiece) {
+            movePiece(sender.locationInView(self.scrollView))
+            isMovingPiece = false
+        }
+    }
+    
+    func processTap(sender : UITapGestureRecognizer) {
+        selectedPiece = sender.view as UIImageView
+        isMovingPiece = true
+    }
+
+    func movePiece(point : CGPoint) {
+        selectedPiece.frame = CGRect(origin: point, size: selectedPiece.frame.size)
+    }
 
     func placePiece(pieceName : String, province : String) {
         let image = UIImage(named: pieceName)
         let piece = UIImageView(frame: CGRect(origin: provinces[province]!, size: CGSize(width: 48, height: 62)))
         piece.image = image
+        
+        piece.userInteractionEnabled = true
+        var tapGesture = UITapGestureRecognizer(target: self, action: "processTap:")
+        tapGesture.cancelsTouchesInView = false
+        piece.addGestureRecognizer(tapGesture)
+        
         self.containerView.addSubview(piece)
-    }
-    
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        println("touched")
     }
     
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         println("touched")
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        println("touched")
-    }
     
     func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
         return self.containerView
     }
 
-}
-
-class MapWindow : UIScrollView {
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        
-        super.touchesBegan(touches, withEvent: event)
-    }
-    
-    override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesMoved(touches, withEvent: event)
-    }
-    
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-        super.touchesEnded(touches, withEvent: event)
-    }
 }

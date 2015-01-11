@@ -87,13 +87,15 @@ class GamesListViewController : UIViewController, UITableViewDelegate, UITableVi
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedGame = gamesList[indexPath.row]
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        performSegueWithIdentifier("viewGameSegue", sender: indexPath)
+        performSegueWithIdentifier("viewGameLobbySegue", sender: indexPath)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "viewGameSegue") {
             let gameScreen : GameScreenViewController = segue.destinationViewController as GameScreenViewController
             gameScreen.game = selectedGame
+        } else {
+            println("game lobby")
         }
     }
     

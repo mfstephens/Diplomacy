@@ -32,7 +32,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         
+        if (isLoggedIn()) {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let navigation = storyBoard.instantiateViewControllerWithIdentifier("GamesListNavigationController") as UINavigationController
+            window?.rootViewController = navigation
+        }
+        
         return true
+    }
+    
+    func isLoggedIn() -> Bool {
+        let currentUser = PFUser.currentUser()
+        if (currentUser != nil) {
+            return true
+        } else {
+            return false
+        }
     }
     
     func loginViewControllerDidLogin(controller : LoginViewController) {

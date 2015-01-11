@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FO6-cA-dyE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FO6-cA-dyE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -215,7 +215,7 @@
         <!--Games List View Controller-->
         <scene sceneID="QzK-Is-QYt">
             <objects>
-                <viewController id="Iy2-E4-zQN" customClass="GamesListViewController" customModule="Diplomacy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamesListViewController" id="Iy2-E4-zQN" customClass="GamesListViewController" customModule="Diplomacy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AN2-6E-fI7"/>
                         <viewControllerLayoutGuide type="bottom" id="ylU-sH-DBo"/>
@@ -317,7 +317,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3b3-gz-L3v" id="K4p-Os-mCP"/>
-                        <segue destination="elU-RY-ri1" kind="show" identifier="viewGameSegue" id="O6E-vh-FbC"/>
+                        <segue destination="Cww-gh-bRm" kind="show" identifier="viewGameLobbySegue" id="Jyr-dP-Zo4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JGh-Pg-FWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -336,7 +336,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6q-S4-06l" customClass="MapWindow" customModule="Diplomacy" customModuleProvider="target">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6q-S4-06l">
                                 <rect key="frame" x="-3" y="2" width="600" height="600"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ucx-d3-Xep">
@@ -380,7 +380,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bdc-mb-joM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3636" y="1488"/>
+            <point key="canvasLocation" x="3672" y="2159"/>
         </scene>
         <!--Create Game-->
         <scene sceneID="MoS-bf-WU4">
@@ -473,12 +473,12 @@
         <!--Navigation Controller-->
         <scene sceneID="dTw-KD-SX7">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jff-qd-5dT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="GamesListNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="jff-qd-5dT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ScH-na-gpi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.36867289345121868" green="0.54934594270365844" blue="0.68827693370165743" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.36862745098039218" green="0.5490196078431373" blue="0.69019607843137254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -511,6 +511,24 @@
             </objects>
             <point key="canvasLocation" x="3625" y="792"/>
         </scene>
+        <!--Game Lobby View Controller-->
+        <scene sceneID="Ukv-UW-zNZ">
+            <objects>
+                <viewController id="Cww-gh-bRm" customClass="GameLobbyViewController" customModule="Diplomacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CRN-rv-a0b"/>
+                        <viewControllerLayoutGuide type="bottom" id="5S5-Vk-6Vw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E7w-ry-cne">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XU7-zM-eS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="1482"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ASS-9C-6LP">
             <objects>
@@ -532,13 +550,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ubl-TY-3PS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="1551"/>
+            <point key="canvasLocation" x="2819" y="2159"/>
         </scene>
     </scenes>
     <resources>
         <image name="map" width="2400" height="2010"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ZLi-5a-Kck"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		C92BB35F1A3D73C70090AEC9 /* Unit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BB35E1A3D73C70090AEC9 /* Unit.swift */; };
 		C92BB3611A3D73D70090AEC9 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92BB3601A3D73D70090AEC9 /* Province.swift */; };
+		C92CD2FE1A5755D5003DCE38 /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92CD2FD1A5755D5003DCE38 /* GameLobbyViewController.swift */; };
 		C94754921A27B8DD0007D6E1 /* NewGameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */; };
 		C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */; };
+		C96938471A493AF900DD877D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96938461A493AF900DD877D /* UIColorExtension.swift */; };
 		C97C7D3D1A3CC59C003C9B21 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C7D3C1A3CC59C003C9B21 /* Board.swift */; };
 		C97C7D3F1A3CC5CC003C9B21 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97C7D3E1A3CC5CC003C9B21 /* Game.swift */; };
 		C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98142E31A1274AD00732AB5 /* SignupViewController.swift */; };
@@ -53,8 +55,10 @@
 		8ABEF0EDA0FC4CD889698483 /* Pods-Diplomacy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diplomacy.xcconfig"; path = "Pods/Pods-Diplomacy.xcconfig"; sourceTree = "<group>"; };
 		C92BB35E1A3D73C70090AEC9 /* Unit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unit.swift; sourceTree = "<group>"; };
 		C92BB3601A3D73D70090AEC9 /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		C92CD2FD1A5755D5003DCE38 /* GameLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
 		C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewGameTableViewController.swift; sourceTree = "<group>"; };
 		C947D8751A26CB1A001F8130 /* GamesListTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesListTableCell.swift; sourceTree = "<group>"; };
+		C96938461A493AF900DD877D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		C97C7D3C1A3CC59C003C9B21 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		C97C7D3E1A3CC5CC003C9B21 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C98142E31A1274AD00732AB5 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				C9DBEF7819EE4DEB00BA6BE5 /* Model */,
 				C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */,
 				C9ACCDBA19E74437006385A8 /* AppDelegate.swift */,
+				C96938461A493AF900DD877D /* UIColorExtension.swift */,
 				C9ACCDBF19E74437006385A8 /* ViewController.swift */,
 				C9ACCDC119E74437006385A8 /* Main.storyboard */,
 				C9ACCDC419E74437006385A8 /* Images.xcassets */,
@@ -190,6 +195,7 @@
 		C9DBEF7519EE3CDC00BA6BE5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C92CD2FD1A5755D5003DCE38 /* GameLobbyViewController.swift */,
 				C9DE269B1A3A144C00A21B03 /* GameScreenViewController.swift */,
 				C94754911A27B8DD0007D6E1 /* NewGameTableViewController.swift */,
 				C947D8741A26CAF6001F8130 /* TableCells */,
@@ -366,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DE269C1A3A144C00A21B03 /* GameScreenViewController.swift in Sources */,
+				C96938471A493AF900DD877D /* UIColorExtension.swift in Sources */,
 				C97C7D3F1A3CC5CC003C9B21 /* Game.swift in Sources */,
 				C947D8761A26CB1A001F8130 /* GamesListTableCell.swift in Sources */,
 				C98142E61A1416A800732AB5 /* GamesListViewController.swift in Sources */,
@@ -374,6 +381,7 @@
 				C98142E41A1274AD00732AB5 /* SignupViewController.swift in Sources */,
 				C9DBEF7719EE3D0000BA6BE5 /* LoginViewController.swift in Sources */,
 				C92BB3611A3D73D70090AEC9 /* Province.swift in Sources */,
+				C92CD2FE1A5755D5003DCE38 /* GameLobbyViewController.swift in Sources */,
 				C9ACCDC019E74437006385A8 /* ViewController.swift in Sources */,
 				C92BB35F1A3D73C70090AEC9 /* Unit.swift in Sources */,
 				C9ACCDBE19E74437006385A8 /* Diplomacy.xcdatamodeld in Sources */,
